@@ -36,11 +36,12 @@ app.use('/api/auth', authRoutes)
 app.use('/api/post', PostRoutes)
 app.use('/api/comment', CommentRoutes)
 
+app.use(express.static(path.join(__dirname, 'client/dist')));
+
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
-})
+});
 
-app.use(express.static(path.join(__dirname, 'client/dist')))
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;
@@ -48,6 +49,6 @@ app.use((err, req, res, next) => {
     res.status(statusCode).json({ 
         success: false,
         statusCode,
-        message 
+        message
         });
 })

@@ -35,7 +35,7 @@ function Signup() {
      }
      setLoading(false);
      if(res.ok) {
-       navigate('/');
+       navigate('/signin');
      }
     } catch (error) {
       setErrorMessage(error.message)
