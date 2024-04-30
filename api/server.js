@@ -12,7 +12,7 @@ import path from 'path'
 
     dotenv.config();
 
-mongoose.connect('mongodb://127.0.0.1:27017/Fullstack', {
+mongoose.connect(process.env.MONGO, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(
@@ -37,10 +37,10 @@ app.use('/api/post', PostRoutes)
 app.use('/api/comment', CommentRoutes)
 
 app.get('*', (req,res) => {
-    res.sendFile(path.join((__dirname, 'client', 'dist', 'index.html')))
+    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
 })
 
-app.use(express.static(path.join__dirname, 'client/dist'))
+app.use(express.static(path.join(__dirname, 'client/dist')))
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;
