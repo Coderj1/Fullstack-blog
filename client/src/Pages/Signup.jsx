@@ -44,7 +44,7 @@ function Signup() {
   }
   return (
     <div className='min-h-screen mt-20'>
-      <div className=' flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center'>
+      <div className=' flex p-3 max-w-3xl mx-auto gap-4 flex-col md:flex-row md:items-center'>
         {/* left */}
         <div className='flex-1'>
         <Link to='/' className='font-bold dark:text-white text-4xl'>
@@ -59,7 +59,7 @@ function Signup() {
         </div>
 
         {/* right */}
-        <div className=' flex-1'>
+        <div className='flex-1'>
           <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
             <div>
               <Label value='Your username' />
