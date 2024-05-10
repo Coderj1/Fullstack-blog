@@ -116,7 +116,7 @@ import Comment from '../Models/comment.model.js'
 
      try {
       const startIndex = parseInt(req.query.startIndex) || 0;
-      const limit = parseInt(req.body.limit) || 0;
+      const limit = parseInt(req.query.limit) || 0;
       const sortDirection = req.query.sort === 'asc' ? 1 : -1
        const comments = await Comment.find()
         .sort({ updatedAt: sortDirection})
