@@ -43,7 +43,7 @@ function Signin() {
   }
   return (
     <div className='min-h-screen mt-20'>
-      <div className=' flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center'>
+      <div className=' flex p-3 max-w-3xl mx-auto gap-4 flex-col md:flex-row md:items-center'>
         {/* left */}
         <div className='flex-1'>
         <Link to='/' className='font-bold dark:text-white text-4xl'>
