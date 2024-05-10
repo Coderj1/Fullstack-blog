@@ -55,7 +55,7 @@ function Signup() {
             Blog
         </Link>
         <p className='text-sm mt-5 font-semibold'>This is a blogging website developed using the Mern stack framework
-          and tailwind css studies using vite and vs code so let get going</p>
+          and tailwind css studies using vite</p>
         </div>
 
         {/* right */}
