@@ -53,7 +53,7 @@ function Signin() {
             </span>
             Blog
         </Link>
-        <p className='text-sm mt-5 font-semibold'>This is a blogging websitedeveloped using the mern stack framework
+        <p className='text-sm mt-5 font-semibold'>This is a blogging website developed using the Mern stack framework
           and tailwind css studies using vite and vs code so let get going</p>
         </div>
 
