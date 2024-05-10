@@ -1,4 +1,4 @@
-import { Button, Label, Select, TextInput } from 'flowbite-react'
+import { Button, Label, Select, Spinner, TextInput } from 'flowbite-react'
 import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import PostCard from '../Component/PostCard';
@@ -137,7 +137,7 @@ export default function Search() {
           }
           {
             loading && <p className='text-xl text-red-300'>
-              Loading...............
+              <Spinner />
             </p>
           }
           {
