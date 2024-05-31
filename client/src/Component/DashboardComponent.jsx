@@ -194,7 +194,7 @@ export default function DashboardComponent() {
         rounded-sm dark:bg-gray-800 mt-3'>
             <div className='flex justify-between p-3 text-sm
              font-semibold'>
-              <h1>Recent Comments</h1>
+              <h1 className='pr-5'>Recent Comments</h1>
               <Link to={'/dashboard?tab=comments'}>
               <Button outline gradientDuoTone='purpleToPink'>See all</Button>
               </Link>
