@@ -56,9 +56,6 @@ export default function CommentPosts({comment, onLike, onEdit, onDelete}) {
     }
 }
 
-const handleDeleteComment = async () => {
-
-}
   return (
     <div className='flex p-4 border-b dark:border-gray-600 text-xs'>
        <div className='flex-shrink-0 mr-3'>
@@ -107,7 +104,7 @@ const handleDeleteComment = async () => {
               className={`text-gray-500 hover:text-blue-500
               ${
                 Currentuser && comment.likes.includes(Currentuser._id)
-                && "!text-blue-500"
+                && "text-blue-500"
               }`}>
                 <FaThumbsUp className='text-sm' />
               </button>

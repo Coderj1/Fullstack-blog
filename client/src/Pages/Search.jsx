@@ -82,7 +82,7 @@ export default function Search() {
        urlParams.set('searchTerm', sidebarData.searchTerm)
        urlParams.set('sort', sidebarData.sort)
        urlParams.set('category', sidebarData.category)
-       const searchQuery =urlParams.toString()
+       const searchQuery = urlParams.toString()
        navigate(`/search?${searchQuery}`);
     }
 
@@ -114,7 +114,8 @@ export default function Search() {
                <Select
                onChange={handleChange}
                value={sidebarData.category}
-               id='category'>
+               id='category'
+               >
                  <option value='uncategorized'>uncategorized</option>
                  <option value='Reactjs'>Reactjs</option>
                  <option value='Nextjs'>Nextjs</option>

@@ -24,7 +24,7 @@ function App() {
    <ScrollTop />
          <Header />
       <Routes>
-      <Route path='/comment' element={<CommentPosts />} />
+         <Route path='/comment' element={<CommentPosts />} />
          <Route path='/' element={<Home />} />
          <Route element={<PrivateRoute />}>
              <Route path='/dashboard' element={<Dashboard />} />

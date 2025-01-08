@@ -27,7 +27,7 @@ export default function DashProfile() {
     const filePickerRef = useRef();
 
     /* call function to change profile image */
-    const handleIimageChange = (e) => {
+    const handleImageChange = (e) => {
         const file = e.target.files[0]
         if (file) {
             setImageFile(file)
@@ -156,7 +156,7 @@ export default function DashProfile() {
     <div className='max-w-lg mx-auto p-3 w-full'>
       <h1 className='my-7 text-center font-semibold text-3xl'>Profile</h1>
       <form className='flex flex-col gap-5' onSubmit={Updateuser}>
-        <input type='file' accept='image/*'  onChange={handleIimageChange} ref={filePickerRef} hidden/>
+        <input type='file' accept='image/*'  onChange={handleImageChange} ref={filePickerRef} hidden/>
         
         {/* get image upload from loacal storage */}
         <div 

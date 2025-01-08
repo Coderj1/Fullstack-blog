@@ -72,11 +72,11 @@ export default function DashUser() {
         setUsers((prev) =>
          prev.filter((user) => user._id !== userIdToDelete ))
        }
-     }catch(error){
-       setFailure("User can't be deleted")
-       
-     }
-  }
+      }catch(error){
+        setFailure("User can't be deleted")
+        
+      }
+    }
 
   return (
     /* call table with condition if user is admin and if 

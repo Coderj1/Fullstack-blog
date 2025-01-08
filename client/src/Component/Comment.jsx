@@ -78,7 +78,7 @@ export default function Comment({ postId }) {
         })
         if(res.ok) {
           const data = await res.json()
-          setComments(comments.map((comment) => 
+          setComments(comments.map((comment) =>
              comment._id === commentId ? {
               ...comment,
               likes: data.likes,
